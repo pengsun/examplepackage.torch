@@ -1,7 +1,8 @@
 require 'torch'
+require 'nn'
 
-local examplepackage = {}
+pstoynn = {}
+dofile('./mul.lua')
+pstoynn.test = dofile('./test.lua')
 
-examplepackage.hellomodule = require 'examplepackage.hellomodule'
-
-return examplepackage
+return pstoynn
